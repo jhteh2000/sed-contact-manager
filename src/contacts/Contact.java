@@ -8,4 +8,12 @@ public class Contact {
         this.person = p;
         this.contactInfo = c;
     }
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public ContactInfo getContactInfo() {
+        return contactInfo;
+    }
 }
