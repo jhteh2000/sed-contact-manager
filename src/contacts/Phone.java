@@ -3,7 +3,7 @@ package contacts;
 import org.checkerframework.checker.units.qual.A;
 
 public class Phone extends ContactInfo implements AudioMessageEnabled {
-    private final String phoneNumber;
+    protected String phoneNumber;
 
     public Phone(String number) {this.phoneNumber = number;}
 
