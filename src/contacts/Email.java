@@ -3,11 +3,13 @@ package contacts;
 public class Email extends ContactInfo implements TextMessageEnabled {
     private final String emailAddress;
 
-    public Email(String address) {this.emailAddress = address;}
+    public Email(String address) {
+        emailAddress = address;
+    }
 
     @Override
     public void sendTextMessage(String msg) {
-        System.out.println(msg + " " + this.emailAddress);
+        System.out.println(msg + " " + emailAddress);
     }
 
     @Override
@@ -17,7 +19,7 @@ public class Email extends ContactInfo implements TextMessageEnabled {
 
     @Override
     public String contactInfo() {
-        return this.emailAddress;
+        return emailAddress;
     }
 
     @Override

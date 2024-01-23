@@ -5,11 +5,13 @@ import org.checkerframework.checker.units.qual.A;
 public class Phone extends ContactInfo implements AudioMessageEnabled {
     protected String phoneNumber;
 
-    public Phone(String number) {this.phoneNumber = number;}
+    public Phone(String number) {
+        phoneNumber = number;
+    }
 
     @Override
     public void sendAudioMessage(Audio msg) {
-        System.out.println(msg.toString() + " " + this.phoneNumber);
+        System.out.println(msg.toString() + " " + phoneNumber);
     }
 
     @Override
@@ -21,7 +23,7 @@ public class Phone extends ContactInfo implements AudioMessageEnabled {
 
     @Override
     public String contactInfo() {
-        return this.phoneNumber;
+        return phoneNumber;
     }
 
     @Override

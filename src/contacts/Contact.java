@@ -5,8 +5,8 @@ public class Contact {
     private final ContactInfo contactInfo;
 
     public Contact(Person p, ContactInfo c) {
-        this.person = p;
-        this.contactInfo = c;
+        person = p;
+        contactInfo = c;
     }
 
     public Person getPerson() {
