@@ -1,7 +1,5 @@
 package contacts;
 
-import org.checkerframework.checker.units.qual.A;
-
 public class Phone extends ContactInfo implements AudioMessageEnabled {
     protected String phoneNumber;
 
